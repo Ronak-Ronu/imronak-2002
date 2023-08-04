@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:im_stepper/stepper.dart';
@@ -88,13 +89,29 @@ class _ReachMeState extends State<ReachMe> {
                       iconColor: Colors.blue,
                       circleAvatarColor: Color.fromARGB(255, 233, 239, 244),
                     ),
-                    Text(
-                      'ronakronu02@gmail.com',
-                      style: TextStyle(
-                        fontSize: 19,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: GoogleFonts.righteous().fontFamily,
+                    TextButton(
+                      onPressed: () {
+                        Clipboard.setData(const ClipboardData(
+                                text: 'ronakronu02@gmail.com'))
+                            .then((_) => ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                        content: Text(
+                                  'Mail Id Copied to  clipboard !',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily:
+                                        GoogleFonts.righteous().fontFamily,
+                                  ),
+                                ))));
+                      },
+                      child: Text(
+                        'ronakronu02@gmail.com',
+                        style: TextStyle(
+                          fontSize: 19,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: GoogleFonts.righteous().fontFamily,
+                        ),
                       ),
                     ),
                   ],
@@ -127,13 +144,30 @@ class _ReachMeState extends State<ReachMe> {
                       iconColor: Colors.blue,
                       circleAvatarColor: Color.fromARGB(255, 233, 239, 244),
                     ),
-                    Text(
-                      'ronak._.2002',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: GoogleFonts.righteous().fontFamily,
+                    TextButton(
+                      onPressed: () {
+                        Clipboard.setData(const ClipboardData(
+                                text:
+                                    'https://www.instagram.com/ronak._.2002/'))
+                            .then((_) => ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                        content: Text(
+                                  'Insta Link Copied to  clipboard !',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily:
+                                        GoogleFonts.righteous().fontFamily,
+                                  ),
+                                ))));
+                      },
+                      child: Text(
+                        'ronak._.2002',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: GoogleFonts.righteous().fontFamily,
+                        ),
                       ),
                     ),
                   ],
@@ -168,13 +202,30 @@ class _ReachMeState extends State<ReachMe> {
                       iconColor: Colors.blue,
                       circleAvatarColor: Color.fromARGB(255, 233, 239, 244),
                     ),
-                    Text(
-                      'Ronak suthar',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: GoogleFonts.righteous().fontFamily,
+                    TextButton(
+                      onPressed: () {
+                        Clipboard.setData(const ClipboardData(
+                                text:
+                                    'https://www.linkedin.com/in/ronak-suthar-2532a4202'))
+                            .then((_) => ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                        content: Text(
+                                  'LinkedIn Copied to  clipboard !',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily:
+                                        GoogleFonts.righteous().fontFamily,
+                                  ),
+                                ))));
+                      },
+                      child: Text(
+                        'Ronak suthar',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: GoogleFonts.righteous().fontFamily,
+                        ),
                       ),
                     ),
                   ],
@@ -209,13 +260,29 @@ class _ReachMeState extends State<ReachMe> {
                       iconColor: Colors.blue,
                       circleAvatarColor: Color.fromARGB(255, 233, 239, 244),
                     ),
-                    Text(
-                      'Ronak_suthar',
-                      style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: GoogleFonts.righteous().fontFamily,
+                    TextButton(
+                      onPressed: () {
+                        Clipboard.setData(const ClipboardData(
+                                text: 'https://github.com/Ronak-Ronu'))
+                            .then((_) => ScaffoldMessenger.of(context)
+                                    .showSnackBar(SnackBar(
+                                        content: Text(
+                                  'Github Link Copied to  clipboard !',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily:
+                                        GoogleFonts.righteous().fontFamily,
+                                  ),
+                                ))));
+                      },
+                      child: Text(
+                        'Ronak_suthar',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: GoogleFonts.righteous().fontFamily,
+                        ),
                       ),
                     ),
                     // Ink(
