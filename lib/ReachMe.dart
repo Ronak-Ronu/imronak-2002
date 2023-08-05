@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:im_stepper/stepper.dart';
 import 'package:redirect_icon/redirect_icon.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

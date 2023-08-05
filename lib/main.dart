@@ -2,6 +2,7 @@ import 'package:flutterapp/About.dart';
 import 'package:flutterapp/Achievements.dart';
 import 'package:flutterapp/ReachMe.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterapp/preloader.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // import 'package:animated_text_kit/animated_text_kit.dart';
@@ -12,12 +13,16 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: const HomePage(),
+        home: const preloader(),
+        routes: {
+          '/main_screen': (_) => const HomePage(),
+        },
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
             color: Color.fromARGB(137, 106, 154, 218),
